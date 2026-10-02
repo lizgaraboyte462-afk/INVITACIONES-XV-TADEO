@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>XV Tadeo</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #000;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+    }
+    .cover {
+      position: relative;
+      width: min(100vw, 480px);
+      line-height: 0;
+    }
+    .cover img {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    /* Área táctil sobre "HAZ CLICK PARA ABRIR LA INVITACIÓN" */
+    .open-link {
+      position: absolute;
+      left: 25%;
+      width: 50%;
+      top: 80.5%;
+      height: 8%;
+      display: block;
+      z-index: 2;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .open-link:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main class="cover">
+    <img src="portada.png" alt="Portada de la invitación XV Tadeo">
+    <a class="open-link"
+       href="https://invitaciones-digitales-lg.my.canva.site/copia-de-copia-de-brissa-y-antonio-definitivo"
+       aria-label="Abrir la invitación completa"
+       title="Abrir la invitación completa"></a>
+  </main>
+</body>
+</html>
